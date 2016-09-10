@@ -1,0 +1,24 @@
+{
+  "name": "smartapp",
+  "version": "1.0.0",
+  "description": "create, read and interact with and from app.json format",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "(npmts)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/pushrocks/smartapp.git"
+  },
+  "author": "Lossless GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/pushrocks/smartapp/issues"
+  },
+  "homepage": "https://gitlab.com/pushrocks/smartapp#README",
+  "dependencies": {
+    "smartfile": "^4.0.15",
+    "typings-global": "^1.0.14"
+  }
+}
