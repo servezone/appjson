@@ -6,10 +6,11 @@ export interface IAppJson {
 
 }
 
-export let readAppJson = () => {
-
+export let smartAppToObject = (SmartApp: SmartApp): IAppJson => {
+  return {}
 }
 
-export let writeAppJson = () => {
+
+export let objectToSmartApp = () => {
 
 }

@@ -11,4 +11,8 @@ describe('smartapp', function () {
     testSmartApp = new smartapp.SmartApp()
     expect(testSmartApp).to.be.instanceof(smartapp.SmartApp)
   })
+
+  it('should understand an AppJson', function() {
+    testSmartApp.readFromJson('./test/app.json')
+  })
 })

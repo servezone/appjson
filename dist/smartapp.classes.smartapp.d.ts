@@ -6,7 +6,10 @@ export interface IEnvVar {
     description: string;
     value: string;
 }
-export declare class SmartApp {
+export declare class Foldable {
+    saveableProperties: string[];
+}
+export declare class SmartApp extends Foldable {
     /**
      * the name of the app, should be unique
      */
