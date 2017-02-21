@@ -20,5 +20,9 @@
   "dependencies": {
     "smartfile": "^4.1.6",
     "typings-global": "^1.0.14"
+  },
+  "devDependencies": {
+    "smartchai": "^1.0.3",
+    "typings-test": "^1.0.3"
   }
 }
