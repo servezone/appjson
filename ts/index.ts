@@ -5,6 +5,12 @@ export interface IScripts {
     postdeploy: string
 }
 
+export interface IEnvVar {
+    name: string
+    description: string
+    value: string
+}
+
 export class Smartapp {
     name: string
     description: string
@@ -14,7 +20,7 @@ export class Smartapp {
     logo: string
     successUrl: string
     scripts: IScripts
-    env: string[] // TODO
+    env: IEnvVar[] // TODO
     formation: string[] // TODO
     image: string
     addons: string[] // TODO

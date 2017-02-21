@@ -18,7 +18,7 @@
   },
   "homepage": "https://gitlab.com/pushrocks/smartapp#README",
   "dependencies": {
-    "smartfile": "^4.0.15",
+    "smartfile": "^4.1.6",
     "typings-global": "^1.0.14"
   }
 }
