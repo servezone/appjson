@@ -1,3 +1,4 @@
 import 'typings-global';
 import * as smartfile from 'smartfile';
-export { smartfile };
+declare let lodash: any;
+export { lodash, smartfile };

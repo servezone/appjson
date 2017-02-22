@@ -8,6 +8,14 @@ export interface IEnvVar {
 }
 export declare class Foldable {
     saveableProperties: string[];
+    /**
+     * folds a class into an object
+     */
+    foldToObject(): {};
+    /**
+     * enfolds data from an object
+     */
+    enfoldFromObject(objectArg: any): void;
 }
 export declare class SmartApp extends Foldable {
     /**

@@ -1,5 +1,4 @@
 import * as plugins from './smartapp.plugins'
-import * as smartappParse from './smartapp.parse'
 
 export interface IScripts {
   postdeploy: string
@@ -13,22 +12,26 @@ export interface IEnvVar {
 
 export class Foldable {
   saveableProperties: string[]
-  foldedObject: any
   /**
    * folds a class into an object
    */
   foldToObject () {
     let newFoldedObject = {}
     for (let keyName of this.saveableProperties) {
-      newFoldedObject[keyName] = this[keyName]
+      newFoldedObject[keyName] = plugins.lodash.cloneDeep(this[keyName])
     }
+    return newFoldedObject
   }
 
   /**
    * enfolds data from an object
    */
-  enfoldFromObject () {
-
+  enfoldFromObject (objectArg) {
+    for (let keyName in objectArg) {
+      if (this.saveableProperties.indexOf(keyName) !== -1) {
+        this[keyName] = objectArg[keyName]
+      }
+    }
   }
 }
 
@@ -124,16 +127,17 @@ export class SmartApp extends Foldable {
   /**
    * read data for SmartApp from Json
    */
-  readFromJson(filePathArg: string) {
+  readFromJson (filePathArg: string) {
     let data = plugins.smartfile.fs.toObjectSync(filePathArg)
-    console.log(data)
+    this.enfoldFromObject(data)
   }
 
   /**
    * write an representation of SmartApp to disk
    */
-  writeToDisk(filePathArg: string) {
-    // plugins.smartfile.memory.toFsSync()
+  writeToDisk (filePathArg: string) {
+    let fileString = JSON.stringify(this.foldToObject())
+    plugins.smartfile.memory.toFsSync(fileString,filePathArg)
   }
 
 }
