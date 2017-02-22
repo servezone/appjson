@@ -11,7 +11,7 @@ testLEGACY:
   stage: test
   script:
     - npmci test legacy
-  coverage: /Lines\s\s\s\s\s\s\s\s:\s\d+.\d+\%/
+  coverage: /Lines\s\s\s\s\s\s\s\s:\s\d+(.\d+)?\%/
   tags:
     - docker
   allow_failure: true
@@ -20,7 +20,7 @@ testLTS:
   stage: test
   script:
     - npmci test lts
-  coverage: /Lines\s\s\s\s\s\s\s\s:\s\d+.\d+\%/
+  coverage: /Lines\s\s\s\s\s\s\s\s:\s\d+(.\d+)?\%/
   tags:
     - docker
     
@@ -28,7 +28,7 @@ testSTABLE:
   stage: test
   script:
     - npmci test stable
-  coverage: /Lines\s\s\s\s\s\s\s\s:\s\d+.\d+\%/
+  coverage: /Lines\s\s\s\s\s\s\s\s:\s\d+(.\d+)?\%/
   tags:
     - docker
 
