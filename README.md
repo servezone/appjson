@@ -21,8 +21,17 @@ create, read and interact with and from app.json format
 ## Usage
 Use TypeScript for best in class instellisense.
 
+```javascript
+import * as smartapp from 'smartapp'
+let testSmartApp = new smartapp.SmartApp()
+testSmartApp.readFromJson('./myTestApp/app.json')
+// do something with the app data here
+testSmartApp.writeToDisk('./myTestAppAltered/app.json')
+```
+
 For further information read the linked docs at the top of this README.
 
 > MIT licensed | **&copy;** [Lossless GmbH](https://lossless.gmbh)
+| By using this npm module you agree to our [privacy policy](https://lossless.gmbH/privacy.html)
 
 [![repo-footer](https://pushrocks.gitlab.io/assets/repo-footer.svg)](https://push.rocks)
