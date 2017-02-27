@@ -1,6 +1,8 @@
 import 'typings-test'
 import { expect } from 'smartchai'
 
+require('babel-register')
+
 // import the actual library
 import * as smartapp from '../dist/index'
 

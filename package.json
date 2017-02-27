@@ -20,9 +20,11 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "smartfile": "^4.1.6",
+    "smartjson": "^1.0.1",
     "typings-global": "^1.0.14"
   },
   "devDependencies": {
+    "babel-register": "^6.23.0",
     "smartchai": "^1.0.3",
     "typings-test": "^1.0.3"
   }
