@@ -1,6 +1,4 @@
-import { Foldable } from 'smartjson';
-import { IAppJSON, IEnvVar, IScripts } from './smartapp.interfaces';
-export declare class SmartApp extends Foldable implements IAppJSON {
+export interface IAppJSON {
     /**
      * the name of the app, should be unique
      */
@@ -44,16 +42,12 @@ export declare class SmartApp extends Foldable implements IAppJSON {
     image: string;
     addons: string[];
     buildpacks: string[];
-    /**
-     * the constructor for a SmartApp class
-     */
-    constructor(appJsonFilePathArg?: string);
-    /**
-     * read data for SmartApp from Json
-     */
-    readFromJson(filePathArg: string): void;
-    /**
-     * write an representation of SmartApp to disk
-     */
-    writeToDisk(filePathArg: string): void;
+}
+export interface IScripts {
+    postdeploy: string;
+}
+export interface IEnvVar {
+    name: string;
+    description: string;
+    value: string;
 }

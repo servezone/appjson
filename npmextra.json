@@ -3,5 +3,8 @@
     "globalNpmTools": [
       "npmts"
     ]
+  },
+  "npmts": {
+    "coverage": false
   }
 }

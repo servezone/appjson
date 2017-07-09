@@ -1,17 +1,9 @@
 import * as plugins from './smartapp.plugins'
 import { Foldable, foldDec } from 'smartjson'
 
-export interface IScripts {
-  postdeploy: string
-}
+import { IAppJSON, IEnvVar, IScripts } from './smartapp.interfaces'
 
-export interface IEnvVar {
-  name: string
-  description: string
-  value: string
-}
-
-export class SmartApp extends Foldable {
+export class SmartApp extends Foldable implements IAppJSON {
   /**
    * the name of the app, should be unique
    */
