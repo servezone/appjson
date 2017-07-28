@@ -38,36 +38,16 @@ class SmartApp extends smartjson_1.Foldable {
 }
 __decorate([
     smartjson_1.foldDec(),
-    __metadata("design:type", String)
-], SmartApp.prototype, "name", void 0);
+    __metadata("design:type", Array)
+], SmartApp.prototype, "addons", void 0);
+__decorate([
+    smartjson_1.foldDec(),
+    __metadata("design:type", Array)
+], SmartApp.prototype, "buildpacks", void 0);
 __decorate([
     smartjson_1.foldDec(),
     __metadata("design:type", String)
 ], SmartApp.prototype, "description", void 0);
-__decorate([
-    smartjson_1.foldDec(),
-    __metadata("design:type", Array)
-], SmartApp.prototype, "keywords", void 0);
-__decorate([
-    smartjson_1.foldDec(),
-    __metadata("design:type", String)
-], SmartApp.prototype, "website", void 0);
-__decorate([
-    smartjson_1.foldDec(),
-    __metadata("design:type", String)
-], SmartApp.prototype, "respository", void 0);
-__decorate([
-    smartjson_1.foldDec(),
-    __metadata("design:type", String)
-], SmartApp.prototype, "logo", void 0);
-__decorate([
-    smartjson_1.foldDec(),
-    __metadata("design:type", String)
-], SmartApp.prototype, "successUrl", void 0);
-__decorate([
-    smartjson_1.foldDec(),
-    __metadata("design:type", Object)
-], SmartApp.prototype, "scripts", void 0);
 __decorate([
     smartjson_1.foldDec(),
     __metadata("design:type", Array)
@@ -82,11 +62,31 @@ __decorate([
 ], SmartApp.prototype, "image", void 0);
 __decorate([
     smartjson_1.foldDec(),
-    __metadata("design:type", Array)
-], SmartApp.prototype, "addons", void 0);
+    __metadata("design:type", String)
+], SmartApp.prototype, "logo", void 0);
+__decorate([
+    smartjson_1.foldDec(),
+    __metadata("design:type", String)
+], SmartApp.prototype, "name", void 0);
 __decorate([
     smartjson_1.foldDec(),
     __metadata("design:type", Array)
-], SmartApp.prototype, "buildpacks", void 0);
+], SmartApp.prototype, "keywords", void 0);
+__decorate([
+    smartjson_1.foldDec(),
+    __metadata("design:type", String)
+], SmartApp.prototype, "respository", void 0);
+__decorate([
+    smartjson_1.foldDec(),
+    __metadata("design:type", String)
+], SmartApp.prototype, "successUrl", void 0);
+__decorate([
+    smartjson_1.foldDec(),
+    __metadata("design:type", Object)
+], SmartApp.prototype, "scripts", void 0);
+__decorate([
+    smartjson_1.foldDec(),
+    __metadata("design:type", String)
+], SmartApp.prototype, "website", void 0);
 exports.SmartApp = SmartApp;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic21hcnRhcHAuY2xhc3Nlcy5zbWFydGFwcC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3RzL3NtYXJ0YXBwLmNsYXNzZXMuc21hcnRhcHAudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQSw4Q0FBNkM7QUFDN0MseUNBQTZDO0FBSTdDLGNBQXNCLFNBQVEsb0JBQVE7SUFzRXBDOztPQUVHO0lBQ0gsWUFBYSxrQkFBMkI7UUFDdEMsS0FBSyxFQUFFLENBQUE7UUFDUCxFQUFFLENBQUMsQ0FBQyxrQkFBa0IsQ0FBQyxDQUFDLENBQUM7WUFDdkIsSUFBSSxDQUFDLFlBQVksQ0FBQyxrQkFBa0IsQ0FBQyxDQUFBO1FBQ3ZDLENBQUM7SUFDSCxDQUFDO0lBRUQ7O09BRUc7SUFDSCxZQUFZLENBQUUsV0FBbUI7UUFDL0IsSUFBSSxJQUFJLEdBQUcsT0FBTyxDQUFDLFNBQVMsQ0FBQyxFQUFFLENBQUMsWUFBWSxDQUFDLFdBQVcsQ0FBQyxDQUFBO1FBQ3pELElBQUksQ0FBQyxnQkFBZ0IsQ0FBQyxJQUFJLENBQUMsQ0FBQTtJQUM3QixDQUFDO0lBRUQ7O09BRUc7SUFDSCxXQUFXLENBQUUsV0FBbUI7UUFDOUIsSUFBSSxVQUFVLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxJQUFJLENBQUMsWUFBWSxFQUFFLENBQUMsQ0FBQTtRQUNwRCxPQUFPLENBQUMsU0FBUyxDQUFDLE1BQU0sQ0FBQyxRQUFRLENBQUMsVUFBVSxFQUFDLFdBQVcsQ0FBQyxDQUFBO0lBQzNELENBQUM7Q0FFRjtBQTNGQztJQURDLG1CQUFPLEVBQUU7O3NDQUNFO0FBTVo7SUFEQyxtQkFBTyxFQUFFOzs2Q0FDUztBQU1uQjtJQURDLG1CQUFPLEVBQUU7OzBDQUNRO0FBTWxCO0lBREMsbUJBQU8sRUFBRTs7eUNBQ0s7QUFNZjtJQURDLG1CQUFPLEVBQUU7OzZDQUNTO0FBTW5CO0lBREMsbUJBQU8sRUFBRTs7c0NBQ0U7QUFNWjtJQURDLG1CQUFPLEVBQUU7OzRDQUNRO0FBTWxCO0lBREMsbUJBQU8sRUFBRTs7eUNBQ087QUFNakI7SUFEQyxtQkFBTyxFQUFFOztxQ0FDSTtBQUdkO0lBREMsbUJBQU8sRUFBRTs7MkNBQ1M7QUFNbkI7SUFEQyxtQkFBTyxFQUFFOzt1Q0FDRztBQUdiO0lBREMsbUJBQU8sRUFBRTs7d0NBQ007QUFHaEI7SUFEQyxtQkFBTyxFQUFFOzs0Q0FDVTtBQXBFdEIsNEJBZ0dDIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic21hcnRhcHAuY2xhc3Nlcy5zbWFydGFwcC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3RzL3NtYXJ0YXBwLmNsYXNzZXMuc21hcnRhcHAudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQSw4Q0FBNkM7QUFDN0MseUNBQTZDO0FBSTdDLGNBQXNCLFNBQVEsb0JBQVE7SUEyRXBDOztPQUVHO0lBQ0gsWUFBYSxrQkFBMkI7UUFDdEMsS0FBSyxFQUFFLENBQUE7UUFDUCxFQUFFLENBQUMsQ0FBQyxrQkFBa0IsQ0FBQyxDQUFDLENBQUM7WUFDdkIsSUFBSSxDQUFDLFlBQVksQ0FBQyxrQkFBa0IsQ0FBQyxDQUFBO1FBQ3ZDLENBQUM7SUFDSCxDQUFDO0lBRUQ7O09BRUc7SUFDSCxZQUFZLENBQUUsV0FBbUI7UUFDL0IsSUFBSSxJQUFJLEdBQUcsT0FBTyxDQUFDLFNBQVMsQ0FBQyxFQUFFLENBQUMsWUFBWSxDQUFDLFdBQVcsQ0FBQyxDQUFBO1FBQ3pELElBQUksQ0FBQyxnQkFBZ0IsQ0FBQyxJQUFJLENBQUMsQ0FBQTtJQUM3QixDQUFDO0lBRUQ7O09BRUc7SUFDSCxXQUFXLENBQUUsV0FBbUI7UUFDOUIsSUFBSSxVQUFVLEdBQUcsSUFBSSxDQUFDLFNBQVMsQ0FBQyxJQUFJLENBQUMsWUFBWSxFQUFFLENBQUMsQ0FBQTtRQUNwRCxPQUFPLENBQUMsU0FBUyxDQUFDLE1BQU0sQ0FBQyxRQUFRLENBQUMsVUFBVSxFQUFDLFdBQVcsQ0FBQyxDQUFBO0lBQzNELENBQUM7Q0FFRjtBQW5HQztJQURDLG1CQUFPLEVBQUU7O3dDQUNNO0FBR2hCO0lBREMsbUJBQU8sRUFBRTs7NENBQ1U7QUFNcEI7SUFEQyxtQkFBTyxFQUFFOzs2Q0FDUztBQVduQjtJQURDLG1CQUFPLEVBQUU7O3FDQUNJO0FBR2Q7SUFEQyxtQkFBTyxFQUFFOzsyQ0FDUztBQU1uQjtJQURDLG1CQUFPLEVBQUU7O3VDQUNHO0FBTWI7SUFEQyxtQkFBTyxFQUFFOztzQ0FDRTtBQU1aO0lBREMsbUJBQU8sRUFBRTs7c0NBQ0U7QUFNWjtJQURDLG1CQUFPLEVBQUU7OzBDQUNRO0FBTWxCO0lBREMsbUJBQU8sRUFBRTs7NkNBQ1M7QUFNbkI7SUFEQyxtQkFBTyxFQUFFOzs0Q0FDUTtBQU1sQjtJQURDLG1CQUFPLEVBQUU7O3lDQUNPO0FBTWpCO0lBREMsbUJBQU8sRUFBRTs7eUNBQ0s7QUF6RWpCLDRCQXFHQyJ9

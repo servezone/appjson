@@ -21,10 +21,10 @@
     "lodash": "^4.17.4",
     "smartfile": "^4.2.17",
     "smartjson": "^1.0.1",
-    "typings-global": "^1.0.17"
+    "typings-global": "^1.0.20"
   },
   "devDependencies": {
     "babel-register": "^6.24.1",
-    "tapbundle": "^1.0.14"
+    "tapbundle": "^1.1.1"
   }
 }
