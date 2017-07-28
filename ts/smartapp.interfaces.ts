@@ -62,5 +62,6 @@ export interface IScripts {
 export interface IEnvVar {
   name: string
   description: string
-  value: string
+  value?: string
+  generator?: string
 }
