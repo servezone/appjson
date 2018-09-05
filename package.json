@@ -1,6 +1,6 @@
 {
   "name": "smartapp",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "create, read and interact with and from app.json format",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
