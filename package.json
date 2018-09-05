@@ -29,5 +29,6 @@
     "@gitzone/tstest": "^1.0.15",
     "@pushrocks/tapbundle": "^3.0.7",
     "@types/node": "^10.9.4"
-  }
+  },
+  "private": true
 }

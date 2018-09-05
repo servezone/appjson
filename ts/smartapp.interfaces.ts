@@ -1,73 +1,73 @@
 export interface IAppJSON {
-  addons: string[] // TODO:
+  addons: string[]; // TODO:
 
-  buildpacks: string[] // TODO:
+  buildpacks: string[]; // TODO:
 
   /**
    * Env Vars that need to be set within the running container
    */
-  env: IEnvVar[]
+  env: IEnvVar[];
 
-  formation: string[] // TODO:
+  formation: string[]; // TODO:
 
   /**
    * a description of the app (what does it do?)
    */
-  description: string
+  description: string;
 
   /**
    * the domain that the app will be available from
    */
-  domain: string
+  domain: string;
 
   /**
    * the actual image of the app
    */
-  image: string
+  image: string;
 
   /**
    * the name of the app, should be unique
    */
-  name: string
+  name: string;
 
   /**
    * keywords are like labels
    */
-  keywords: string[]
+  keywords: string[];
 
   /**
    * The URL of the application’s logo image, preferably in svg format
    */
-  logo: string
+  logo: string;
 
   /**
    * The location of the application’s source code, such as a Git URL
    */
-  respository: string
+  respository: string;
 
   /**
    * A URL specifying where to redirect the user once their new app is deployed
    */
-  successUrl: string
+  successUrl: string;
 
   /**
    * scripts that are run after the app has been deployed
    */
-  scripts: IScripts
+  scripts: IScripts;
 
   /**
    * a website for the project (has no technical aspect, just description)
    */
-  website: string
+  website: string;
 }
 
 export interface IScripts {
-  postdeploy: string
+  postdeploy: string;
 }
 
 export interface IEnvVar {
-  name: string
-  description: string
-  value?: string
-  generator?: string
+  name: string;
+  description: string;
+  value?: string;
+  generator?: string;
 }
