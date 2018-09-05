@@ -1,7 +1,6 @@
-import 'typings-global'
-import * as smartfile from 'smartfile'
-import smartlodash from 'smartlodash'
-import * as smartjson from 'smartjson'
+import * as smartfile from '@pushrocks/smartfile'
+import smartlodash from '@pushrocks/smartlodash'
+import * as smartjson from '@pushrocks/smartjson';
 
 export {
     smartfile,

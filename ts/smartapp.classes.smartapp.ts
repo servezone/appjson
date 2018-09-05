@@ -1,5 +1,5 @@
 import * as plugins from './smartapp.plugins'
-import { Foldable, foldDec } from 'smartjson'
+import { Foldable, foldDec } from '@pushrocks/smartjson'
 
 import { IAppJSON, IEnvVar, IScripts } from './smartapp.interfaces'
 

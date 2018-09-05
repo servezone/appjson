@@ -1,10 +1,7 @@
-import { expect, tap } from 'tapbundle'
-
-// Since for instrumenting the files are converted to ES5, babel-register is required.
-require('babel-register')
+import { expect, tap } from '@pushrocks/tapbundle';
 
 // import the actual library
-import * as smartapp from '../dist/index'
+import * as smartapp from '../ts/index';
 
 let testSmartApp: smartapp.SmartApp
 
@@ -21,7 +18,7 @@ tap.test('should state the saveable properties', async () => {
 
 tap.test('should understand an AppJson', async () => {
   testSmartApp.readFromJson('./test/app.json')
-  expect(testSmartApp.foldToObject()).property('env').contain({
+  expect(testSmartApp.foldToObject()).property('env').to.deep.include({
     'name': 'SECRET_TOKEN',
     'description': 'A secret key for verifying the integrity of signed cookies.',
     'generator': 'secret'

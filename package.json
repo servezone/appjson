@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "(npmts --nocoverage)"
+    "test": "(tstest test/)",
+    "build": "(tsbuild)"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,15 @@
   },
   "homepage": "https://gitlab.com/pushrocks/smartapp#README",
   "dependencies": {
-    "smartfile": "^4.2.17",
-    "smartjson": "^1.0.1",
-    "smartlodash": "^1.0.1",
-    "typings-global": "^1.0.20"
+    "@pushrocks/smartfile": "^6.0.8",
+    "@pushrocks/smartjson": "^2.0.2",
+    "@pushrocks/smartlodash": "^2.0.0"
   },
   "devDependencies": {
-    "babel-register": "^6.24.1",
-    "tapbundle": "^1.1.1"
+    "@gitzone/tsbuild": "^2.0.22",
+    "@gitzone/tsrun": "^1.1.12",
+    "@gitzone/tstest": "^1.0.15",
+    "@pushrocks/tapbundle": "^3.0.7",
+    "@types/node": "^10.9.4"
   }
 }
