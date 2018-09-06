@@ -1,5 +1,5 @@
 {
-  "name": "smartapp",
+  "name": "@pushrocks/smartapp",
   "version": "1.0.17",
   "private": false,
   "description": "create, read and interact with and from app.json format",
