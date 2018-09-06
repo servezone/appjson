@@ -1,2 +1,2 @@
-export * from './smartapp.classes.smartapp';
-export * from './smartapp.interfaces';
+export * from './appjson.classes.smartapp';
+export * from './appjson.interfaces';

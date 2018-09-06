@@ -1,9 +1,9 @@
-import * as plugins from './smartapp.plugins';
+import * as plugins from './appjson.plugins';
 import { Foldable, foldDec } from '@pushrocks/smartjson';
 
-import { IAppJSON, IEnvVar, IScripts } from './smartapp.interfaces';
+import { IAppJSON, IEnvVar, IScripts } from './appjson.interfaces';
 
-export class SmartApp extends Foldable implements IAppJSON {
+export class AppJson extends Foldable implements IAppJSON {
   @foldDec()
   addons: string[]; // TODO
 

@@ -3,11 +3,11 @@ import { expect, tap } from '@pushrocks/tapbundle';
 // import the actual library
 import * as smartapp from '../ts/index';
 
-let testSmartApp: smartapp.SmartApp;
+let testSmartApp: smartapp.AppJson;
 
 tap.test('should create an empty SmartApp instance', async () => {
-  testSmartApp = new smartapp.SmartApp();
-  expect(testSmartApp).to.be.instanceof(smartapp.SmartApp);
+  testSmartApp = new smartapp.AppJson();
+  expect(testSmartApp).to.be.instanceof(smartapp.AppJson);
 });
 
 tap.test('should state the saveable properties', async () => {
