@@ -1,6 +1,6 @@
 {
   "name": "@servezone/appjson",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "private": false,
   "description": "create, read and interact with and from app.json format",
   "main": "dist/index.js",
