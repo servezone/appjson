@@ -21,6 +21,8 @@ create, read and interact with and from app.json format
 ## Usage
 Use TypeScript for best in class instellisense.
 
+This package enables the transparent parsing of app.json data.
+
 For further information read the linked docs at the top of this README.
 
 >  licensed | **&copy;** [Lossless GmbH](https://lossless.gmbh)
