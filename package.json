@@ -21,15 +21,16 @@
   "homepage": "https://gitlab.com/pushrocks/smartapp#README",
   "dependencies": {
     "@pushrocks/smartfile": "^7.0.4",
-    "@pushrocks/smartjson": "^3.0.7",
-    "@pushrocks/smartlodash": "^2.0.0"
+    "@pushrocks/smartjson": "^3.0.7"
   },
   "devDependencies": {
     "@gitzone/tsbuild": "^2.1.11",
     "@gitzone/tsrun": "^1.2.8",
     "@gitzone/tstest": "^1.0.24",
     "@pushrocks/tapbundle": "^3.0.11",
-    "@types/node": "^12.7.1"
+    "@types/node": "^12.7.1",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0"
   },
   "files": [
     "ts/*",
