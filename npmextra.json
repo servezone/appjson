@@ -3,7 +3,14 @@
     "npmGlobalTools": [],
     "npmAccessLevel": "public"
   },
-  "npmts": {
-    "coverage": false
+  "gitzone": {
+    "module": {
+      "githost": "gitlab.com",
+      "gitscope": "servezone",
+      "gitrepo": "appjson",
+      "shortDescription": "create, read and interact with and from app.json format",
+      "npmPackagename": "@servezone/appjson",
+      "license": "MIT"
+    }
   }
 }
