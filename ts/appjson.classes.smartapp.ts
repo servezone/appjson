@@ -4,6 +4,15 @@ import { Smartjson, foldDec } from '@pushrocks/smartjson';
 import { IAppJSON, IEnvVar} from './appjson.interfaces';
 
 export class AppJson extends Smartjson implements IAppJSON {
+  // ======
+  // STATIC
+  // ======
+  public static async fromDisk(pathArg: string) {
+    const appJsonInstance = new AppJson();
+    await appJsonInstance.readFromDisk(pathArg);
+    return appJsonInstance;
+  }
+
 
   /**
    * a description of the app (what does it do?)
@@ -63,7 +72,7 @@ export class AppJson extends Smartjson implements IAppJSON {
   constructor(appJsonFilePathArg?: string) {
     super();
     if (appJsonFilePathArg) {
-      this.readFromJson(appJsonFilePathArg);
+      this.readFromDisk(appJsonFilePathArg);
     }
   }
 
@@ -73,15 +82,15 @@ export class AppJson extends Smartjson implements IAppJSON {
   /**
    * read data for SmartApp from Json
    */
-  public readFromJson(filePathArg: string) {
-    let data = plugins.smartfile.fs.toObjectSync(filePathArg);
+  public async readFromDisk(filePathArg: string) {
+    const data = plugins.smartfile.fs.toObjectSync(filePathArg);
     this.enfoldFromObject(data);
   }
 
   /**
    * write an representation of SmartApp to disk
    */
-  public writeToDisk(filePathArg: string) {
+  public async writeToDisk(filePathArg: string) {
     const fileString = JSON.stringify(this.foldToObject());
     plugins.smartfile.memory.toFsSync(fileString, filePathArg);
   }
